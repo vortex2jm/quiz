@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+
+:root{
+
+    animation:animacao 10s ease infinite alternate; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Nova Square', cursive;
+}
+
+
+@keyframes animacao{
+
+    0%{background-color: #000000;}
+    25%{background-color: #150050;}
+    50%{background-color: #3F0071;}
+    100%{background-color: #610094;}
+}
+
+
+h1{
+    font-size: 7rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px rgb(0, 0, 0);
+    margin-bottom: 70px;
+}
+
+.principal{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow:4px 4px black;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 80px;
+    font-size: 20px;
+    color: white;
+}
+
+.botao:hover{
+
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,255,6);
+    transition: transform 100ms;
+    transform: scale(1.03);
+}
+
+#nome{
+
+    background-color: transparent;
+}
+

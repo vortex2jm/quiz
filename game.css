@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*___________background animado___________________*/
+
+#fundo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #610094 ,#3F0071,#150050 ,#000000);
+    background-size: 300% 200%;
+    animation-name: degrade;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes degrade{
+
+    from{background-position-x: 0%;
+        background-position-y: 0%;}
+
+    to{background-position-x: 100%;
+        background-position-y: 100%;}
+}
+
+
+/*_______________ANIMAÇÃO COM O FOGUETE_____________*/
+
+#box{
+    
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-shadow: 4px 4px 5px rgb(78, 182, 243);
+    border-radius: 20px;
+}
+
+#box img{
+
+    width: 100%;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;   
+    animation-timing-function: linear;  
+}
+
+#overbox{
+
+    transform: rotate(90deg);
+    position: absolute;
+    margin-left: -500px;
+    animation-name: flyGo;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+#foguete{
+
+    width: 100px;
+}
+
+@keyframes slide{
+
+    from{left: 0%}
+    to{left:-100%}
+}
+
+@keyframes flyGo{
+
+    from{margin-left: -500px}
+    to{margin-left:500px}
+}
+
+@keyframes flyBack{
+
+    from{margin-left: 500px}
+    to{margin-left: -500px}
+
+    /*utilizar animação com time=3s*/
+}
