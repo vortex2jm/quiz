@@ -8,8 +8,9 @@
     font-family: 'Nova Square', cursive;
 }
 
-/*______________background animado___________________*/
+/*____________________________________________background animado________________________________*/
 
+/*section -> background do site*/
 #fundo{
 
     display: flex;
@@ -29,7 +30,7 @@
     animation-timing-function: ease-in-out;
 
 }
-
+/*Animação degradê do fundo do site*/
 @keyframes degrade{
 
     from{background-position-x: 0%;
@@ -40,8 +41,9 @@
 }
 
 
-/*_______________ANIMAÇÃO COM O FOGUETE_____________*/
+/*________________________________ANIMAÇÃO COM O FOGUETE_________________________________*/
 
+/*Caixa em que está rolando o carrossel de imagens*/
 #box{
     
     width: 60%;
@@ -53,6 +55,7 @@
     border-radius: 2rem;
 }
 
+/*Imagens do carrossel*/
 #box img{
 
     width: 100%;
@@ -63,34 +66,40 @@
     animation-timing-function: linear;  
 }
 
+/*Div do foguete*/
 #overbox{
 
     transform: rotate(90deg);
     position: absolute;
     margin-top: 20%;
-    animation-name: flyGo;
-    animation-duration: 10s;
+    margin-left: -50%;
+    animation-name: none; /*vai mudar para flyGo*/
+    animation-duration: 10s; /*Vai ser settado de acordo com a quantidade de questões*/
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
 
+/*A imagem do foguete*/
 #foguete{
 
     width: 100px;
 }
 
+/*Animação das imagens do box*/
 @keyframes slide{
 
     from{left: 0%}
     to{left:-100%}
 }
 
+/*Animação de ida do foguete*/
 @keyframes flyGo{
 
     from{margin-left: -50%}
     to{margin-left:50%}
 }
 
+/*Animação da volta do foguete*/
 @keyframes flyBack{
 
     from{margin-left: 50%}
@@ -99,9 +108,11 @@
     /*utilizar animação com time=3s*/
 }
 
-/*___________PERGUNTAS E RESPOSTAS___________*/
 
 
+/*________________________________PERGUNTAS E RESPOSTAS___________________________________*/
+
+/*Div das questões*/
 #question{
 
     display: flex;
@@ -115,11 +126,22 @@
     text-align: center;
     color: white;
     font-size: 4rem;
-    text-shadow: 2px 2px rgb(0, 0, 0);;
-    
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    box-shadow: 4px 4px 5px rgb(78, 182, 243);
+    background-image: url(images/outerspace-70.gif);
+    background-size: cover;
     
 }
 
+.alertQuestion{
+
+    color: black;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,255,6);
+    background-color: rgb(55, 190, 214);
+
+}
+
+/*Div das respostas*/
 #answers{
 
     display: flex;
@@ -130,6 +152,7 @@
     
 }
 
+/*Classe dos botões de resposta*/
 .alternatives{
 
     background-color: transparent;
@@ -140,8 +163,10 @@
     color: white;
     font-size: 2.5rem;
     text-shadow: 2px 2px black;
+    background-image: url(images/planeta.gif);
 }
 
+/*Função para mouseOver nos botões de resposta*/
 .alternatives:hover{
 
     box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,255,6);
@@ -150,13 +175,14 @@
     
 }
 
+/*Função para mouseOver no box de perguntas*/
 #question:hover{
 
     background-color: black;
-    box-shadow: 4px 4px 5px rgb(78, 182, 243);
    
 }
 
+/*Função para mouseOver no background do site*/
 #fundo:hover{
 
     background-image: url(images/6MpJh9.jpg);
