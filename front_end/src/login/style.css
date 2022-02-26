@@ -64,7 +64,7 @@ h1{
     box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,255,6);
     transition: transform 100ms;
     transform: scale(1.03);
-    background-image: url(images/RnjH.gif);
+    background-image: url(./../../images/RnjH.gif);
     background-size: cover;
     color: black;
 }
