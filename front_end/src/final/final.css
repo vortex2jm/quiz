@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Nova Square', cursive;
+}
+
+section{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../../images/6MpJh9.jpg");
+    background-size: 300% 200%;
+    animation-name: backgroundMove;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+div{
+
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px rgb(78, 182, 243);
+
+}
+
+span{
+
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px black;
+}
+
+/*ANIMATIONS*/
+
+@keyframes backgroundMove{
+
+    from{
+        background-position-x: 0%;
+        background-position-y: 0%;
+    }
+    to{background-position-x: 100%;
+       background-position-y: 100%;
+    }
+}

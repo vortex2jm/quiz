@@ -36,6 +36,8 @@ const answer4 = document.querySelector('#d');
 const rocket= document.querySelector("#overbox");
 const questionBox = document.querySelector('#question');
 
+
+
 //PROMISE
 getData().then((data) => {
     console.log(data); 
@@ -74,7 +76,7 @@ getData().then((data) => {
         answer3.style.backgroundImage = "none";
         answer4.style.backgroundImage = "none";
         
-        
+
         questionBox.classList.remove("alertQuestion");
     
         rocket.style.animationName = "flyGo";
@@ -115,6 +117,7 @@ getData().then((data) => {
         }, totalTime * 1000);
 
     }, 5000);
+
 
 })
 .catch((erro)=>{
