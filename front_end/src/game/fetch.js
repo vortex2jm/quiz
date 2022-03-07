@@ -1,8 +1,5 @@
+export const getData = async () => {
 
-fetch("http://localhost:3003/")
-.then((response) => {
-    return response.json()
-})
-.then((questions) => {
-    console.log(questions);   
-});
+   const response = await fetch("http://localhost:3003/");
+   return response.json(); 
+}

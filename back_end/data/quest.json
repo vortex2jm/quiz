@@ -4,23 +4,20 @@
         "answer1": "2006",
         "answer2": "2010",
         "answer3": "1998",
-        "answer4": "2002",
-        "right": "2002"
+        "answer4": "2002"
     },
     {
         "question": "Quem foi campeão do major de CSGO em 2021?",
         "answer1": "Navi",
         "answer2": "G2",
         "answer3": "Vitality",
-        "answer4": "NIP",
-        "right": "Navi"
+        "answer4": "NIP"
     },
     {
         "question": "Quem descreveu a teoria da relatividade?",
         "answer1": "Einstein",
         "answer2": "Tesla",
         "answer3": "Newton",
-        "answer4": "Rutherford",
-        "right": "Einstein"
+        "answer4": "Rutherford"
     }
 ]
