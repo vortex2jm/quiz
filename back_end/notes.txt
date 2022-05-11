@@ -1,0 +1,1 @@
+Parei antes de criar as migrations
