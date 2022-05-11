@@ -6,7 +6,10 @@ const actualizeState = (data, qNumber, counter, totalQuestions, letter, results)
 
     results.push(letter);
     setQuestion(data,qNumber);
-    if(counter == totalQuestions) window.location.href = "./../final/final.html";
+    if(counter == totalQuestions){
+
+        window.location.href = "./../final/final.html"; 
+    } 
 }
 
 const setQuestion = (objectQuestion, questioNumber) => {
@@ -19,13 +22,17 @@ const setQuestion = (objectQuestion, questioNumber) => {
     answer3.textContent = objectQuestion[questioNumber].answer3;
     answer4.textContent = objectQuestion[questioNumber].answer4;
 
-    //if(qNumber < data.length - 1){qNumber += 1;};
 }
 
 const setWarmup = (warmup, value) =>{
 
     warmup[0].question = "Você tem "+value+" segundos para resolver as seguintes questões. Preparado?";
 }
+
+/*const setFinal = (text, qtd) => {
+
+    text.textContent = `Você acertou ${qtd} questões C:`;
+}*/
 
 //QUERY
 const question = document.querySelector('#question_text');
@@ -35,8 +42,9 @@ const answer3 = document.querySelector('#c');
 const answer4 = document.querySelector('#d');
 const rocket= document.querySelector("#overbox");
 const questionBox = document.querySelector('#question');
+//========================================================
 
-
+export let results = [];
 
 //PROMISE
 getData().then((data) => {
@@ -51,7 +59,7 @@ getData().then((data) => {
 
     const warmUp = warmUpJs;
 
-    let results = [];
+    
 
     const setQNum = () => {
         if(qNumber < data.length - 1){qNumber += 1;};
@@ -113,11 +121,12 @@ getData().then((data) => {
         });
 
         setTimeout(() => {
+
             window.location.href = "./../final/final.html";
+
         }, totalTime * 1000);
 
     }, 5000);
-
 
 })
 .catch((erro)=>{

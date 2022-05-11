@@ -58,7 +58,7 @@
 /*Imagens do carrossel*/
 #box img{
 
-    width: 100%;
+    /*width: 100%;*/
     position: relative;
     animation-name: slide;
     animation-duration: 4s;
