@@ -1,20 +1,12 @@
 const express = require("express");
 const routes = express.Router();
 
+const connection = require('./database/connection');
 
+routes.post("/", );
 
+routes.get("/", );
 
-
-routes.get("/",(req,res)=>{
-
-    
-})
-
-
-routes.get("/results",(req,res)=>{
-
-    
-
-})
+routes.delete("/", );
 
 module.exports = routes;
