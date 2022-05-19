@@ -1,12 +1,12 @@
 const express = require("express");
 const routes = express.Router();
 
-const connection = require('./database/connection');
+const questionsController = require('./controllers/questionsController');
 
-routes.post("/", );
+routes.post("/questions/register", questionsController.create);
 
-routes.get("/", );
+routes.get("/list", questionsController.index);
 
-routes.delete("/", );
+routes.delete("/questions/delete/:id", questionsController.delete);
 
 module.exports = routes;

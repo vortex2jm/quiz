@@ -1,1 +1,1 @@
-Parei antes de criar as migrations
+Criei as rotas de cadastro, listagem e deleção. Próximo passo é controlar o numero dos IDs de acordo com as deleções e linkar o backend com o frontend!
