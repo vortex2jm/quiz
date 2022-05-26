@@ -1,0 +1,21 @@
+.navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 5vh;
+}
+
+.navbar a{
+
+    color: blanchedalmond;
+    text-shadow: 2px 2px blueviolet;
+}   
+
+.navbar a:hover {
+
+    color: coral;
+}
