@@ -5,7 +5,7 @@ const questionsController = require('./controllers/questionsController');
 
 routes.post("/questions/register", questionsController.create);
 
-routes.get("/list", questionsController.index);
+routes.get("/questions/list", questionsController.index);
 
 routes.delete("/questions/delete/:id", questionsController.delete);
 

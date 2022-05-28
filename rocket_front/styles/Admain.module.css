@@ -1,0 +1,39 @@
+.container{
+
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, grey,rgb(107, 106, 106),rgb(61, 61, 61),rgb(36, 35, 35),rgb(3, 3, 3));
+
+}
+
+.container h1{
+
+    margin: 2%;
+    text-shadow: 1px 1px white;
+}
+
+.subcontainer {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.subcontainer button{
+
+    width: 10%;
+    height: 5vh;
+    margin: 2%;
+    font-weight: bold;
+    box-shadow: 2px 2px black;
+}
+
+.subcontainer button:hover{
+
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,255,6);
+    transition: transform 100ms;
+    transform: scale(1.03);
+}

@@ -20,13 +20,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right , #610094 ,#3F0071,#150050 ,#000000);
-  background-size: 300% 200%;
-  animation: gradient 8s alternate infinite ease-in-out;
+  background: radial-gradient(circle , #610094 ,#3F0071,#150050 ,#000000);
+  /* background-size: 300% 200%; */
+  /* animation: gradient 8s alternate infinite ease-in-out; */
   color: antiquewhite;
   text-shadow: 2px 2px black;
   font-size: 1.3rem;
-
 }
 
 .container a {

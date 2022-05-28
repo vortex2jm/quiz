@@ -1,0 +1,21 @@
+.navbar{
+    
+    height: 5vh;
+    width: 100%;
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.3%;
+    text-shadow: 1.5px 1.5px rgb(255, 79, 255);
+    font-size: 1.2rem;
+}
+
+.navbar span:hover{
+
+    transform: scale(1.2);
+    transition: transition 100ms;
+}
