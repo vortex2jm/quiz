@@ -1,0 +1,69 @@
+/* Animations */
+@keyframes gradient{
+
+  from{
+    background-position-x: 0%;
+    background-position-y: 0%;
+  }
+  to{
+    background-position-x: 100%;
+    background-position-y: 100%;
+  }
+}
+
+/* Styles */
+
+.container{
+
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right , #610094 ,#3F0071,#150050 ,#000000);
+  background-size: 300% 200%;
+  animation: gradient 8s alternate infinite ease-in-out;
+  color: antiquewhite;
+  text-shadow: 2px 2px black;
+  font-size: 1.3rem;
+
+}
+
+.container a {
+
+  border: 1px solid antiquewhite;
+  width: 20%;
+  height: 5%;
+  margin: 2%;
+  text-align: center;
+  text-decoration: none;
+  color: antiquewhite;
+  box-shadow: 5px 5px black;
+}
+
+.container a:hover{
+
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,255,6);
+  transition: transform 100ms;
+  transform: scale(1.03);
+  background-image: url("../public/img/galaxia.gif");
+}
+
+.container input{
+
+  width: 20%;
+  height: 5%;
+  margin: 2%;
+  text-align: center;
+  background-color: transparent;
+  color: antiquewhite;
+  font-size: 1.2rem;
+  box-shadow: 5px 5px black;
+}
+
+.container input:focus{
+
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,255,6);
+  transition: transform 100ms;
+  transform: scale(1.03);
+}
