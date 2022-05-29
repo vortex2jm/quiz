@@ -5,7 +5,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: radial-gradient(circle, grey,rgb(107, 106, 106),rgb(61, 61, 61),rgb(36, 35, 35),rgb(3, 3, 3));
+    /* background: radial-gradient(circle, grey,rgb(107, 106, 106),rgb(61, 61, 61),rgb(36, 35, 35),rgb(3, 3, 3)); */
+    background: radial-gradient(circle, rgb(0, 174, 0), rgb(0, 142, 0), rgb(1, 95, 1), rgb(0, 44, 0), rgb(0, 11, 0));
 }
 /* ======================================= */
 .subcontainer{

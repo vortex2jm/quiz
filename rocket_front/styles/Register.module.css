@@ -1,0 +1,58 @@
+.form{
+
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, orangered,rgb(192, 51, 0),rgb(139, 38, 1),rgb(68, 18, 0),rgb(9, 2, 0));
+}
+
+.form input{
+
+    margin-bottom: 1.5rem;
+    color: black;
+    box-shadow: 2px 2px black;
+    width: 20%;
+    height: 8%;
+}
+
+.form label{
+
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px whitesmoke;
+}
+
+.form input:focus{
+
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,255,6);
+    transition: transform 100ms;
+    transform: scale(1.03);
+}
+
+.form select{
+
+    margin-bottom: 2rem;
+    width: 5%;
+    height: 3%;
+}
+
+/* ================================================= */
+
+.buttons{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    height: 5%;
+}
+
+.buttons button{
+
+    color: antiquewhite;
+    background-color: black;
+    width: 40%;
+    height: 100%;
+}

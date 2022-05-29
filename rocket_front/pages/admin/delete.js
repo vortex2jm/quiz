@@ -38,8 +38,7 @@ export default function Delete({questions}){
         console.log(res);
     }  
 
-    return(
-        
+    return(    
         <>
         <div className={styles.container}>
 
