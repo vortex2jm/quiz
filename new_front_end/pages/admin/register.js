@@ -24,10 +24,7 @@ export default function Register(){
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify(body)
         }
-        
-
         try{
-
             console.log(body);
             const response = await fetch(url, registerObject);
             const data = await response;
