@@ -34,7 +34,7 @@ module.exports = class QuestionsController {
     const qstSvc = new QuestionServices()
 
     try{
-      qstSvc.delete(req.params)
+      await qstSvc.delete(req.params)
       return res.status(204).send()
     }catch(error){
       console.log(error)
