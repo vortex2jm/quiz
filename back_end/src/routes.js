@@ -1,12 +1,11 @@
 const express = require("express");
+const QuestionsController = require("./controllers/questionsController");
+
+const qstCtrl = new QuestionsController()
 const routes = express.Router();
 
-const questionsController = require('./controllers/questionsController');
-
-routes.post("/questions/register", questionsController.create);
-
-routes.get("/questions/list", questionsController.index);
-
-routes.delete("/questions/delete/:id", questionsController.delete);
+routes.post("/questions/register", qstCtrl.createQuestion);
+routes.get("/questions/list", qstCtrl.listQuestions);
+routes.delete("/questions/delete/:id", qstCtrl.deleteQuestion);
 
 module.exports = routes;
