@@ -1,28 +1,21 @@
-const dbConnection = require("../database/connection")
+const QuestionsRepository = require("../repositories/questionRepository")
 
 module.exports = class QuestionServices {
 
-    async create({question,answer1,answer2,answer3,answer4,right}){
+    constructor(){
+        this.questRepo = new QuestionsRepository()
+    }
 
-        const [id] = await dbConnection('questions').insert({
-            question,
-            answer1,
-            answer2,
-            answer3,
-            answer4,
-            right,
-        })
-
-        return id
+    async create(qst){
+        return await this.questRepo.create(qst);
     }
 
     async list(){
-        const questions = await dbConnection('questions').select('*')
-        return questions
+        return await this.questRepo.list()
     }
 
     async delete(param){
         const {id} = param
-        await dbConnection('questions').where('id', id).delete()
+        await this.questRepo.delete(id)
     }
 }
